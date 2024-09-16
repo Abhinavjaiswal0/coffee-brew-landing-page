@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Brew - Subscription Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-80">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/images/coffee brew (2).png" alt="Coffee Brew" class="img-fluid logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#coffee-types">Coffee Types</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subscribe">Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav>
+    <!-- Hero Section -->
+     <div class="head">
+    <header class="hero text-white text-start d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold mb-3 ">Wake Up and Smell the Brew – Your Perfect Coffee, Delivered Fresh!</h1>
+                    <p class="lead mb-4">Join our subscription service and enjoy ₹200 off your first order.</p>
+                    <a href="#subscribe" class="btn-custom btn-lg mt-4">Subscribe Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <div class="fixed-form-mob">
+    <div class="fixed-form "></div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-center">Sign Up</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+                    </div>
+                    <div class="dropdown">
+                        <label for="subscription-plan">Choose your subscription plan:</label>
+                        <select id="subscription-plan" name="subscription-plan">
+                            <option value="" disabled selected>Select Plan</option>
+                            <option value="lactose-free-plan">Lactose-Free Plan</option>
+                            <option value="sugar-free-plan">Sugar-Free Plan</option>
+                            <option value="regular-plan">Regular Plan</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-custom btn-lg mt-4">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="main-content">
+        <!-- Coffee Types -->
+        <section class="coffee-types py-5" id="coffee-types">
+            <div class="container text-center">
+                <h2 class="mb-5">Our Coffee Types</h2>
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 shadow-sm hover-card">
+                            <div class="card-body">
+                                <img src="/images/lactose-free.jpg" class="card mb-4 hover-card animate-on-scroll card-img-top img-fluid" alt="Lactose-Free">
+                                <h3 class="card-title">Lactose-Free</h3>
+                                <p class="card-text">Smooth and creamy coffee without the lactose. Perfect for those with lactose intolerance or who simply prefer a lighter taste.</p>
+                                <ul>
+                                    <li>Ingredients: Arabica beans, Lactose-free milk</li>
+                                    <li>Flavor Profile: Mild, Creamy</li>
+                                    <li>Best Served: Hot or iced</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 shadow-sm hover-card">
+                            <div class="card-body">
+                                <img src="/images/black-coffee.jpg" class="card mb-4 hover-card animate-on-scroll card-img-top img-fluid" alt="Black Coffee">
+                                <h3 class="card-title">Black</h3>
+                                <p class="card-text">Rich, bold coffee for purists who love the pure, unadulterated taste of coffee. A robust choice for any time of day.</p>
+                                <ul>
+                                    <li>Ingredients: 100% Arabica beans</li>
+                                    <li>Flavor Profile: Strong, Bitter</li>
+                                    <li>Best Served: Black, with a splash of water or milk</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 shadow-sm hover-card">
+                            <div class="card-body">
+                                <img src="/images/latte.jpg" class="card mb-4 hover-card animate-on-scroll card-img-top img-fluid" alt="Latte">
+                                <h3 class="card-title">Latte</h3>
+                                <p class="card-text">Creamy and delicious, our Latte combines espresso with steamed milk for a smooth and comforting beverage.</p>
+                                <ul>
+                                    <li>Ingredients: Espresso, Steamed milk, Froth</li>
+                                    <li>Flavor Profile: Smooth, Creamy</li>
+                                    <li>Best Served: Hot with a sprinkle of cocoa powder</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscription Plans -->
+        <section class="subscription-plans py-5" id="subscribe">
+            <div class="container text-center">
+                <h2 class="mb-5">Choose Your Subscription Plan</h2>
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 shadow-sm hover-card">
+                            <div class="card-body">
+                                <img src="/images/lactose.png" class="card mb-4 hover-card animate-on-scroll card-img-top plan-img" alt="Lactose-Free">
+                                <h3 class="card-title">Lactose-Free Plan</h3>
+                                <p class="card-text">₹1,250 per month</p>
+                                <p>Free Delivery + ₹200 Off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 shadow-sm hover-card">
+                            <div class="card-body">
+                                <img src="/images/sugar free.png" class="card mb-4 hover-card animate-on-scroll card-img-top plan-img" alt="Sugar-Free">
+                                <h3 class="card-title">Sugar-Free Plan</h3>
+                                <p class="card-text">₹1,500 per month</p>
+                                <p>Free Delivery + ₹200 Off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 shadow-sm hover-card">
+                            <div class="card-body">
+                                <img src="/images/regular.png" class="card mb-4 hover-card animate-on-scroll card-img-top plan-img" alt="Regular">
+                                <h3 class="card-title">Regular Plan</h3>
+                                <p class="card-text">₹1,000 per month</p>
+                                <p>Free Delivery + ₹200 Off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- How It Works Section -->
+        <section class="how-it-works py-5" id="how-it-works">
+            <div class="container text-center">
+                <h2 class="mb-5">How It Works</h2>
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 shadow-sm hover-card">
+                            <div class="card-body">
+                                <img src="/images/one.png" class="card mb-4 hover-card animate-on-scroll card-img-top plan-img" alt="Choose">
+                                <h3 class="card-title">Step 1: Choose Your Coffee</h3>
+                                <p class="card-text">Select from our range of premium coffee types to suit your taste. Whether you like it black or with milk, we’ve got you covered.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 shadow-sm hover-card">
+                            <div class="card-body">
+                                <img src="/images/two.png" class="card mb-4 hover-card animate-on-scroll card-img-top plan-img" alt="Select Plan">
+                                <h3 class="card-title">Step 2: Select Your Plan</h3>
+                                <p class="card-text">Choose the perfect subscription plan for you, whether it's lactose-free, sugar-free, or regular. Save ₹200 on your subscription!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 shadow-sm hover-card">
+                            <div class="card-body">
+                                <img src="/images/three.png" class="card mb-4 hover-card animate-on-scroll card-img-top plan-img" alt="Enjoy">
+                                <h3 class="card-title">Step 3: Enjoy Your Coffee</h3>
+                                <p class="card-text">Get freshly brewed coffee delivered to your doorstep. Enjoy your daily dose of happiness with Coffee Brew!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Fixed Sign-Up Form -->
+    <div class="fixed-form hide-fixed">
+        
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-center">Sign Up</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+                    </div>
+                    <div class="dropdown">
+                        <label for="subscription-plan">Choose your subscription plan:</label>
+                        <select id="subscription-plan" name="subscription-plan">
+                            <option value="" disabled selected>Select Plan</option>
+                            <option value="lactose-free-plan">Lactose-Free Plan</option>
+                            <option value="sugar-free-plan">Sugar-Free Plan</option>
+                            <option value="regular-plan">Regular Plan</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-custom btn-lg mt-4">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Coffee Brew. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+    
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+    
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+        AOS.init();
+        function addPopEffect() {
+                    const logo = document.querySelector('.logo-img');
+                    logo.classList.add('pop-effect');
+                }
+                window.onload = addPopEffect;
+
+                const select = document.getElementById('subscription-plan');
+
+
+                document.addEventListener('DOMContentLoaded', function() {
+    const select = document.getElementById('subscription-plan');
+
+    select.addEventListener('mouseover', function() {
+        const options = select.options;
+
+        // Loop through options and add hover effect
+        for (let i = 0; i < options.length; i++) {
+            options[i].addEventListener('mouseover', function() {
+                options[i].classList.add('custom-hover'); // Apply custom CSS class on hover
+            });
+            options[i].addEventListener('mouseout', function() {
+                options[i].classList.remove('custom-hover'); // Remove custom CSS class on hover out
+            });
+        }
+    });
+});
+
+    </script>
+    
+</body>
+</html>
