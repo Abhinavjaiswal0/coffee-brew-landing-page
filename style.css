@@ -37,7 +37,7 @@ i {
 
 /* Hero Section */
 .hero {
-    background-image: url('/images/cafe-bg.jpg'); 
+    background-image: url('./images/cafe-bg.jpg'); 
     background-size: cover;
     background-position: center left;
     background-repeat: no-repeat;
